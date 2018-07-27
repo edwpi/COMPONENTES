@@ -1,17 +1,23 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>COMPONENTES</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h3>INGRESAR</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Usuario</ion-label>
+      <ion-input type="text"[(ngModel)]="Usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Contraseña</ion-label>
+      <ion-input type="password"[(ngModel)]="Contrasena"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button color="light" round (click)="recupera()">Recuperar Contraseña</button>
+  
+  <button ion-button small round (click)="validar()">INGRESAR</button>
+
 </ion-content>
