@@ -1,8 +1,8 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-//import { NgModule } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -23,7 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    NgModule,
+    NgForm,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
